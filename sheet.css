@@ -1,0 +1,70 @@
+body{
+    display:flex;
+    align-items: stretch;
+    height: 100vh;
+}
+
+.logo-container{
+    background-image: url("./images/odin-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70vw;
+}
+
+.odin-img{
+    height: min(120px, 20%);
+    width: min(120px, 20%);
+}
+
+.logo{
+    color: white;
+    margin-top: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+    background-color: rgba(0,0,0,.5);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logo > div{
+    font-size: 4vw;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+fieldset{
+    display: grid;
+    grid-template: 50px 50px 50px / 100px 100px;
+    column-gap: 18vw;
+    row-gap: 3vh;
+    padding: 30px;
+}
+
+button{
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 15%;
+    border: 5px solid rgb(6, 56, 11);
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px 5px 10px;
+    align-self: flex-start;
+    margin-left: 10px;
+}
+
+.form-container > p, .form-container > div{
+    margin-left: 10px;
+}
