@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Page</title>
     <link rel="stylesheet" href="./sheet.css">
+    <script defer src="./script.js"></script>
 </head>
 <body>
         <div class="logo-container">
@@ -17,36 +18,37 @@
         <div class="form-container">
             <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started</p>
             <div>&nbsp; You <em>know</em> you want to.</div>
-        
-        <form action="" method="get">
+         <div class="error"></div>
+        <form action="" method="get" id="form">  
             <fieldset>
                 <legend>Let's do this!</legend>
                 <div class="inputs">
                     <label for="firstName">First Name</label>
-                    <input type="text" id="firstName" name="first-name">
+                    <input type="text" id="firstName" name="first-name" required placeholder="John">
                 </div>
                 <div class="inputs">
                     <label for="lastName">Last Name</label>
-                    <input type="text" id="lastName" name="last-name">
+                    <input type="text" id="lastName" name="last-name" required placeholder="Smith">
                 </div>
                 <div class="inputs">
                     <label for="email">E-mail</label>
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email" required placeholder="johnsmith@email.com">
                 </div>
                 <div class="inputs">
                     <label for="phoneNo">Phone Number</label>
-                    <input type="tel" name="phone-number" id="phoneNo">
+                    <input type="tel" name="phone-number" id="phoneNo" required placeholder="">
                 </div>
                 <div class="inputs">
                     <label for="pass">Password</label>
-                   <input type="password" name="password" id="pass">
+                   <input type="password" name="password" id="pass" required placeholder="">
                 </div>
                 <div class="inputs">
                     <label for="confirm">Confirm Password</label>
-                    <input type="password" name="confirmpass" id="confirm">
+                    <input type="password" name="confirmpass" id="confirm" required placeholder="">
                 </div>
             </fieldset>
             <button type="submit">Create Account</button>
+            <div style="margin-left: 10px;">Already have an account? <span style="color: green">Log in</span></div>
         </form>
         </div>
 </body>
