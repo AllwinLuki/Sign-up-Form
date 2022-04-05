@@ -1,3 +1,12 @@
+@font-face{
+    font-family: norsebold;
+    src: url(./Fonts/Norse-Bold.otf);
+}
+
+.logo > div{
+    font-family: norsebold;
+}
+
 body{
     display:flex;
     align-items: stretch;
@@ -29,7 +38,7 @@ body{
 }
 
 .logo > div{
-    font-size: 4vw;
+    font-size: 6vw;
 }
 
 .form-container{
@@ -117,3 +126,26 @@ input:invalid:not(:focus){
     opacity: 0;
 }
 
+fieldset{
+    background-color: rgb(240, 252, 252);
+    box-shadow: 0px 10px 8px #888888;
+}
+
+/* Set the font-size of .form-control */
+.inputs{
+    font-size: 16px;
+  }
+  
+  /* On screens that are 992px or less, set font-size to 14px */
+  @media screen and (max-width: 992px) {
+    .inputs{
+      font-size: 14px;
+    }
+  }
+  
+  /* On screens that are 600px or less, set font-size to 12px */
+  @media screen and (max-width: 600px) {
+    .inputs{
+      font-size: 12px;
+    }
+  }

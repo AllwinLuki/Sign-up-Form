@@ -3,6 +3,8 @@ const passw = document.getElementById("pass");
 const conf = document.getElementById("confirm");
 const inputs = document.querySelectorAll(".inputs > input");
 
+const error = document.querySelector(".error");
+
 conf.addEventListener("keyup", function(){
     if(passw.value !== conf.value){
         conf.style.border = "solid 2px red";
@@ -46,11 +48,11 @@ inputs.forEach(input => {
 form.addEventListener('submit', (e) => {
     let messages = [];
     if(passw.value !== conf.value){
-        messages.push("Password confirmation doesn't match");
+        messages.push("*Password confirmation doesn't match");
     }
 
     if(messages.length > 0){
     e.preventDefault();
-    alert("Password confirmation doesn't match!");
+    error.innerHTML = messages.join(", ");
     }
 });
